@@ -1,7 +1,6 @@
 language: c
 
-install:
-    - sudo apt-get update -qq
+install: sudo apt-get update -qq
 
 compiler:
     - clang
@@ -10,6 +9,8 @@ compiler:
 script: make sparsify
 
 notifications:
-    email:
-        - anthony+travis@agargiulo.com
+    email: anthony+travis@agargiulo.com
     irc: "skynet.csh.rit.edu#usercenter"
+    template: "%{repository}#%{build_number}: %{author}: %{branch}: %{message}"
+    on_success: change
+    on_failure: change
