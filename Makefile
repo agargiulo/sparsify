@@ -1,4 +1,3 @@
-CC = clang
 CFLAGS = -ggdb -std=c99 -Wall -Wextra
 
 BINARIES = sparsify sparsify.o
