@@ -1,13 +1,15 @@
 CC = clang
 CFLAGS = -ggdb -std=c99 -Wall -Wextra
 
-BINARIES = sparsify
+BINARIES = sparsify sparsify.o
 
 all: sparsify
 
-sparsify: sparsify.c
-	$(CC) $(CFLAGS) -o stringParse $^
+sparsify.o: sparsify.c
+	$(CC) $(CFLAGS) -c $^
+
+sparsify: sparsify.o
+	$(CC) $(CFLAGS) -o sparsify $^
 
 clean:
 	@$(RM) -rfv $(BINARIES)
-

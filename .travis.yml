@@ -1,0 +1,14 @@
+language: c
+
+install:
+    - sudo apt-get update -qq
+
+compiler:
+    - clang
+    - gcc
+
+script: make sparsify
+
+notifications:
+    email:
+        - anthony+travis@agargiulo.com
