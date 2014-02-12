@@ -12,3 +12,4 @@ script: make sparsify
 notifications:
     email:
         - anthony+travis@agargiulo.com
+    irc: "skynet.csh.rit.edu#usercenter"
