@@ -1,3 +1,11 @@
+/**
+ * Author: Anthony Gargiulo <anthony@agargiulo.com>
+ * Version: 0.0.1
+ *
+ * Hole-punches a file into a sparse file
+ */
+#define _POSIX_C_SOURCE 200112L
+
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,6 +13,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <unistd.h>
+
 
 int main (int argc, char **argv)
 {
