@@ -12,5 +12,3 @@ notifications:
     email: anthony+travis@agargiulo.com
     irc: "skynet.csh.rit.edu#usercenter"
     template: "%{repository}#%{build_number}: %{author}: %{branch}: %{message}"
-    on_success: change
-    on_failure: change
